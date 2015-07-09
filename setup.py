@@ -119,36 +119,19 @@ setup(
         #             'LPyModel = openalea.plantlab.lpy:LPyFileModel',
         #         ],
 
-        'oalab.modelclass': [
-            'LPyModel = openalea.plantlab.lpy:LPyModel',
-        ],
-
-        'oalab.dataclass': [
-            'LPyData = openalea.plantlab.lpy_data:LPyFile',
-        ],
-
-        'oalab.paradigm_applet': [
-            'LPyApplet = openalea.plantlab.plugins:LPyModelGUI',
-        ],
-
         'oalab.applet': [
-            'Viewer3D = openalea.plantlab.plugins:Viewer3D',
+            'PlantApplet = openalea.plantlab.plugin.applet',
         ],
 
         'oalab.lab': [
-            'PlantLab = openalea.plantlab.plugins:PlantLab',
+            'PlantLab = openalea.plantlab.plugin.lab',
         ],
 
-
-        'oalab.qt_control': [
-            'PluginColorListWidget = openalea.plantlab.plugins:PluginColorListWidget',
-            'PluginMaterialListWidget = openalea.plantlab.plugins:PluginMaterialListWidget',
-            'PluginCurve2DWidget = openalea.plantlab.plugins:PluginCurve2DWidget',
-            'PluginQuantisedFunctionWidget = openalea.plantlab.plugins:PluginQuantisedFunctionWidget',
-            'PluginPatchWidget = openalea.plantlab.plugins:PluginPatchWidget',
+        'oalab.plugin': [
+            'PlantOpenAleaLabPlugin = openalea.plantlab.plugin.oalab',
         ],
         'oalab.interface': [
-            'PlantGLOAInterfacePlugin = openalea.plantlab.plugins:PlantGLOAInterfacePlugin',
+            'PlantInterfacePlugin = openalea.plantlab.plugin.interface',
         ],
 
 

@@ -1,4 +1,4 @@
-from openalea.core.plugin.control import ControlWidgetSelectorPlugin
+from openalea.oalab.plugin.oalab.control import ControlWidgetSelectorPlugin
 
 
 class PluginColorListWidget(ControlWidgetSelectorPlugin):
@@ -59,3 +59,13 @@ class PluginPatchWidget(ControlWidgetSelectorPlugin):
     def load(cls):
         from openalea.plantlab.qtcontrol import NurbsPatchWidget
         return NurbsPatchWidget
+
+
+class LPyModelGUI(object):
+    name = 'LSystem'
+    mimetype_data = "text/vnd-lpy"
+    mimetype_model = "text/vnd-lpy"
+
+    def __call__(self):
+        from openalea.plantlab.paradigm import LPyModelController
+        return LPyModelController

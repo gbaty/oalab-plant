@@ -1,5 +1,5 @@
 
-from openalea.oalab.plugins.labs.default import DefaultLab
+from openalea.oalab.plugin.builtin.lab.default import DefaultLab
 
 
 class PlantLab(DefaultLab):

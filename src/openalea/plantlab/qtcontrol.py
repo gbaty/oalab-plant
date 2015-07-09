@@ -1,5 +1,5 @@
 
-from openalea.oalab.gui.control.widget import AbstractQtControlWidget
+from openalea.oalab.control.widget import AbstractQtControlWidget
 from openalea.oalab.plugins.controls.painters import PainterInterfaceObject
 from painters import PainterColorList, PainterMaterialList
 from openalea.plantgl.gui.materialeditor import MaterialEditor
