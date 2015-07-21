@@ -1,8 +1,9 @@
 
-from openalea.core.plugin import PluginMeta
+from openalea.core.plugin import PluginDef
 
 
-class Viewer3D(PluginMeta):
+@PluginDef
+class Viewer3D(object):
     name = 'Viewer3D'
     alias = 'Viewer'
     icon = 'icon_viewer.png'

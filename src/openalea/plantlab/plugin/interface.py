@@ -1,9 +1,10 @@
+
+from openalea.core.plugin import PluginDef
 from openalea.plantlab.interface import *
 
 
+@PluginDef
 class PlantGLOAInterfacePlugin(object):
 
     def __call__(self):
-
-        all = [IColorList, IMaterialList, ICurve2D, IQuantisedFunction, IPatch]
-        return all
+        return [IColorList, IMaterialList, ICurve2D, IQuantisedFunction, IPatch]

@@ -20,9 +20,9 @@
 __revision__ = ""
 
 
-from openalea.oalab.widget.paradigm.python import PythonModelController
+from openalea.core.world import World
+from openalea.oalab.paradigm.python import PythonModelController
 from openalea.plantlab.lpy_data import LPyFile
-from openalea.oalab.session.session import Session
 from openalea.oalab.service.help import display_help
 
 
@@ -37,7 +37,7 @@ class LPyModelController(PythonModelController):
 
     def __init__(self, **kwds):
         PythonModelController.__init__(self, **kwds)
-        self.session = Session()
+        self.world = World()
 
     def _default_editor(self):
         from openalea.oalab.editor.text_editor import RichTextEditor as Editor
@@ -59,8 +59,7 @@ class LPyModelController(PythonModelController):
     def update_world(self):
         # TODO: remove this hard link!
         # Update world ?
-        world = self.session.world
-        world[self.model.scene_name] = self.model.axialtree
+        self.world[self.model.scene_name] = self.model.axialtree
 
     def namespace(self, **kwargs):
         ns = PythonModelController.namespace(self, **kwargs)

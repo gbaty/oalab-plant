@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 
 from openalea.vpltk.qt import QtCore, QtGui
-from openalea.oalab.plugins.controls.painters import AbstractPainter
+from openalea.oalab.painter import AbstractPainter
 
 
 class PainterColorList(AbstractPainter):
