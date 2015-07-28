@@ -68,7 +68,7 @@ class LPyModelGUI(object):
     name = 'LSystem'
     mimetype_data = "text/vnd-lpy"
     mimetype_model = "text/vnd-lpy"
-    implements = ['IParadigmApplet']
+    implement = 'IParadigmApplet'
 
     def __call__(self):
         from openalea.plantlab.paradigm import LPyModelController

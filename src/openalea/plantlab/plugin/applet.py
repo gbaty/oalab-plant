@@ -5,7 +5,7 @@ from openalea.core.plugin import PluginDef
 @PluginDef
 class Viewer3D(object):
     name = 'Viewer3D'
-    alias = 'Viewer'
+    label = 'Viewer'
     icon = 'icon_viewer.png'
 
     def __call__(self):

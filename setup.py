@@ -120,18 +120,18 @@ setup(
         #         ],
 
         'oalab.applet': [
-            'PlantApplet = openalea.plantlab.plugin.applet',
+            'oalab.applet/plantlab = openalea.plantlab.plugin.applet',
         ],
 
         'oalab.lab': [
-            'PlantLab = openalea.plantlab.plugin.lab',
+            'oalab.lab/plantlab = openalea.plantlab.plugin.lab',
         ],
 
         'oalab.plugin': [
-            'PlantOpenAleaLabPlugin = openalea.plantlab.plugin.oalab',
+            'oalab/plantlab = openalea.plantlab.plugin.oalab',
         ],
-        'oalab.interface': [
-            'PlantInterfacePlugin = openalea.plantlab.plugin.interface',
+        'openalea.interface': [
+            'openalea.interface/plantlab = openalea.plantlab.plugin.interface',
         ],
 
 
